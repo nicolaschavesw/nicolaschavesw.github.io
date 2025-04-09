@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio - Gabriel Nicolás Chaves Torres</title>
+    <link rel="stylesheet" href="Assets/styles.css">
+    <script defer src="script.js"></script>
+    <!-- Animacion aos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <!-- Fuente Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!-- Fuente Commissioner -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Commissioner:wght@100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="sidebar">
+        <nav>
+            <ul>
+                <li data-section="about">
+                    <a href=".about">
+                        <button>
+                            <i class="fas fa-user"></i>
+                            <span>Sobre mí</span>
+                        </button>
+                    </a>
+                </li>
+
+                <li data-section="experience">
+                    <a href=".experience">
+                        <button>
+                            <i class="fas fa-briefcase"></i>
+                            <span>Experiencia</span>
+                        </button>
+                    </a>
+                </li>
+
+                <li data-section="projects">
+                    <a href=".projects">
+                        <button>
+                            <i class="fas fa-project-diagram"></i>
+                            <span>Proyectos</span>
+                        </button>
+                    </a>
+                </li>
+
+                <li data-section="skills">
+                    <a href=".skills">
+                        <button>
+                            <i class="fas fa-code"></i>
+                            <span>Skills</span>
+                        </button>
+                    </a>
+                </li>
+
+                <li data-section="contact">
+                    <a href=".contact">
+                        <button>
+                            <i class="fas fa-envelope"></i>
+                            <span>Contacto</span>
+                        </button>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <button id="theme-toggle">🌙 Modo Oscuro</button>
+
+    <main>
+        <div class="content">
+
+            <section class="about" data-aos="fade-up">
+                <div class="container">
+                    <div>
+                        <div class="title">
+                            <h2>Hola, soy</h2>
+                            <h1 class="name">Gabriel Nicolás</h1>
+                            <h1 class="name">Chaves Torres</h1>
+                        </div>
+                        <div class="text">
+                            <p>
+                                Ingeniero en Multimedia
+                                y desarrollador Unity especializado
+                                en experiencias de realidad virtual
+                                (VR) y optimización de entornos
+                                3D interactivos.
+                            </p>
+                            <p>
+                                Con experiencia en C#, Unity, modelado 3D y desarrollo web, combino habilidades técnicas
+                                y creatividad para crear experiencias inmersivas e intuitivas. Me apasiona el diseño de
+                                videojuegos y la innovación tecnológica aplicada a la educación y simulación.
+                            </p>
+                            <div class="tech-slider">
+                                <div class="tech-track">
+                                    <!-- UNITY -->
+                                    <button class="tech-icon unity" title="Unity">
+                                        <img src="Assets/Icons/unity-svgrepo-com.svg" alt="Unity">
+                                    </button>
+                                    <!-- UNREAL ENGINE -->
+                                    <button class="tech-icon unreal" title="Unreal Engine">
+                                        <img src="Assets/Icons/unrealengine-svgrepo-com.svg" alt="Unreal">
+                                    </button>
+                                    <!-- AUTODESK MAYA -->
+                                    <button class="tech-icon maya" title="Maya">
+                                        <img src="Assets/Icons/maya-svgrepo-com.svg" alt="Maya">
+                                    </button>
+                                    <!-- GITHUB -->
+                                    <button class="tech-icon github" title="Github">
+                                        <img src="Assets/Icons/github-svgrepo-com.svg" alt="Github">
+                                    </button>
+                                    <!-- GIT -->
+                                    <button class="tech-icon git" title="Git">
+                                        <img src="Assets/Icons/git-svgrepo-com.svg" alt="Git">
+                                    </button>
+                                    <!-- FIGMA -->
+                                    <button class="tech-icon figma" title="Figma">
+                                        <img src="Assets/Icons/figma-svgrepo-com.svg" alt="Figma">
+                                    </button>
+                                    <!-- HTML -->
+                                    <button class="tech-icon html" title="HTML">
+                                        <img src="Assets/Icons/html-124-svgrepo-com.svg" alt="HTML">
+                                    </button>
+                                    <!-- CSS -->
+                                    <button class="tech-icon css" title="CSS">
+                                        <img src="Assets/Icons/css3-02-svgrepo-com.svg" alt="CSS">
+                                    </button>
+                                    <!-- JS -->
+                                    <button class="tech-icon js" title="JS">
+                                        <img src="Assets/Icons/js01-svgrepo-com.svg" alt="JS">
+                                    </button>
+                                    <!-- ADOBE PS -->
+                                    <button class="tech-icon photoshop" title="Photoshop">
+                                        <img src="Assets/Icons/adobe-ps-svgrepo-com.svg" alt="Photoshop">
+                                    </button>
+                                    <!-- ADOBE AI -->
+                                    <button class="tech-icon illustrator" title="Illustrator">
+                                        <img src="Assets/Icons/adobe-ai-svgrepo-com.svg" alt="Illustrator">
+                                    </button>
+                                    <!-- ADOBE PR -->
+                                    <button class="tech-icon premiere" title="Premiere">
+                                        <img src="Assets/Icons/adobe-pr-svgrepo-com.svg" alt="Premiere">
+                                    </button>
+                                    <!-- ADOBE AE -->
+                                    <button class="tech-icon after-effects" title="After-Effects">
+                                        <img src="Assets/Icons/adobe-ae-svgrepo-com.svg" alt="After-Effects">
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="image" id="profile-container">
+                        <img id="profile-image" src="Assets/Images/Gabriel Nicolas Chaves Photo.JPG" alt="Tu Foto">
+                    </div>
+                </div>
+            </section>
+
+            <section class="experience" data-aos="fade-up">
+                <h2>Experiencia</h2>
+
+            </section>
+
+            <section class="projects" data-aos="fade-up">
+                <h2>Proyectos</h2>
+                <div class="project-grid">
+                    <div class="project-card">
+                        <img src="Assets/Images/proyecto1.png" alt="Proyecto 1">
+                        <h3>Proyecto 1</h3>
+                        <p>Descripción breve del proyecto.</p>
+                        <a href="#">Ver más</a>
+                    </div>
+                    <div class="project-card">
+                        <img src="Assets/Images/proyecto2.png" alt="Proyecto 2">
+                        <h3>Proyecto 2</h3>
+                        <p>Descripción breve del proyecto.</p>
+                        <a href="#">Ver más</a>
+                    </div>
+                    <div class="project-card">
+                        <img src="Assets/Images/proyecto2.png" alt="Proyecto 2">
+                        <h3>Proyecto 2</h3>
+                        <p>Descripción breve del proyecto.</p>
+                        <a href="#">Ver más</a>
+                    </div>
+                    <div class="project-card">
+                        <img src="Assets/Images/proyecto2.png" alt="Proyecto 2">
+                        <h3>Proyecto 2</h3>
+                        <p>Descripción breve del proyecto.</p>
+                        <a href="#">Ver más</a>
+                    </div>
+                    <div class="project-card">
+                        <img src="Assets/Images/proyecto2.png" alt="Proyecto 2">
+                        <h3>Proyecto 2</h3>
+                        <p>Descripción breve del proyecto.</p>
+                        <a href="#">Ver más</a>
+                    </div>
+                    <div class="project-card">
+                        <img src="Assets/Images/proyecto2.png" alt="Proyecto 2">
+                        <h3>Proyecto 2</h3>
+                        <p>Descripción breve del proyecto.</p>
+                        <a href="#">Ver más</a>
+                    </div>
+                    <!-- más cards -->
+                </div>
+            </section>
+
+            <section class="skills" data-aos="fade-up">
+                <h2>skills</h2>
+
+            </section>
+
+            <section class="contact" data-aos="fade-up">
+                <h2>Contacto</h2>
+
+                <p>Email: nicolaschaves97@gmail.com</p>
+            </section>
+        </div>
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>
