@@ -444,7 +444,6 @@ body {
 }
 
 .tech-icon {
-    flex: 0 0 auto;
     background-color: transparent;
     border: none;
     cursor: pointer;
@@ -453,20 +452,16 @@ body {
     transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
-.tech-icon:hover {
-    background-color: rgba(240, 235, 216, 0.2);
-    transform: scale(1.1);
-}
-
-.tech-icon img {
+.tech-icon svg {
     width: 50px;
     height: 50px;
-    filter: brightness(0) invert(1);
-    transition: filter 0.3s ease;
+    fill: #F0EBD8;
+    transition: fill 0.3s ease;
 }
 
-.unity:hover img {
-    background: #0D1321;
+.tech-icon:hover {
+    transform: scale(1.1);
+    background-color: #0D1321;
 }
 
 @keyframes scroll {
@@ -479,9 +474,107 @@ body {
     }
 }
 
+/* SECTION EXPERIENCE */
 
+.experience {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
 
-.experience {}
+.experience-card {
+    width: 90%;
+    background-color: rgba(240, 235, 216, 0.05);
+    border-left: 4px solid var(--hover-color-experience);
+    padding: 20px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.1);
+    transition: background 0.3s ease;
+}
+
+.experience-card:hover {
+    background-color: rgba(240, 235, 216, 0.1);
+}
+
+.experience-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.experience-title {
+    font-size: 1.5rem;
+    color: var(--hover-color-experience);
+    margin: 0;
+}
+
+.experience-date {
+    font-size: 0.9rem;
+    color: #bbb;
+    font-style: italic;
+}
+
+.experience-company {
+    font-weight: 600;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    color: #F0EBD8;
+}
+
+.experience-description {
+    max-width: 900px;
+    color: #F0EBD8;
+    line-height: 1.6;
+}
+
+.experience-tasks {
+    border-left: 3px solid var(--hover-color-experience);
+    list-style: none;
+    padding-left: 15px;
+    margin-top: 15px;
+}
+
+.experience-tasks li {
+    margin-bottom: 8px;
+    color: #F0EBD8;
+    font-size: 0.95rem;
+    font-weight: 400;
+    opacity: 0.85;
+}
+
+.experience-tech {
+    margin-top: 15px;
+    font-size: 0.9rem;
+    color: #F0EBD8;
+}
+
+.tech-icons-used {
+    margin-top: 20px;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.tech-icons-used svg {
+    width: 40px;
+    height: 40px;
+    fill: #F0EBD8;
+    padding: 5px;
+    margin: 10px;
+    border-radius: 10%;
+    transition: transform 0.3s ease, fill 0.3s ease;
+}
+
+.tech-icons-used svg:hover {
+    transform: scale(1.2);
+    fill: var(--hover-color-experience);
+    background-color: #0D1321;
+    cursor: pointer;
+}
 
 .projects {}
 
