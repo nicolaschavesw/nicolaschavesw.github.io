@@ -31,11 +31,13 @@ html {
 
 body {
     height: 100vh;
+    min-height: 100vh;
     margin: 0;
     font-family: "Commissioner", sans-serif;
     color: #F0EBD8;
     background: linear-gradient(-45deg, #748CAB, #1D2D44, #2C244D, #3E5C76);
-    background-size: 400% 400%;
+    background-size: 400% 1000%;
+    background-repeat: repeat;
     animation: gradient 15s ease infinite;
 }
 
@@ -576,7 +578,13 @@ body {
     cursor: pointer;
 }
 
-.projects {}
+.projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
 
 .project-grid {
     display: grid;
@@ -637,7 +645,33 @@ body {
     }
 }
 
-.skills {}
+.skills {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 300px;
+}
+
+.skill-card {
+    max-width: 100px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.skill-card:hover {
+    
+    transform: scale(1.05);
+}
 
 .contact {}
 
