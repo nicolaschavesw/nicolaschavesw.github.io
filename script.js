@@ -109,6 +109,18 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 });
 
+document.addEventListener("DOMContentLoaded", () => {
+    const links = document.querySelectorAll("a[href^='http']");
+  
+    links.forEach(link => {
+      // Verifica que no sea un enlace al mismo dominio
+      if (!link.href.includes(window.location.hostname)) {
+        link.setAttribute("target", "_blank");
+        link.setAttribute("rel", "noopener noreferrer");
+      }
+    });
+  });
+
 
 
 /*

@@ -36,7 +36,7 @@ body {
     font-family: "Commissioner", sans-serif;
     color: #F0EBD8;
     background: linear-gradient(-45deg, #748CAB, #1D2D44, #2C244D, #3E5C76);
-    background-size: 400% 1000%;
+    background-size: 400% 2000%;
     background-repeat: repeat;
     animation: gradient 15s ease infinite;
 }
@@ -674,6 +674,73 @@ body {
 }
 
 .contact {}
+
+.contact-card {
+    background: rgba(13, 19, 33, 0.8);
+    border-radius: 15px;
+    padding: 40px;
+    max-width: 600px;
+    margin: 0 auto;
+    color: #F0EBD8;
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.2);
+    text-align: center;
+  }
+  
+  .contact-card h2 {
+    font-size: 2rem;
+    color: #00FFFF;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+  
+  .contact-card p {
+    font-size: 1.1rem;
+    margin: 10px 0;
+  }
+  
+  .contact-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  .contact-info a {
+    color: #F0EBD8;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+  }
+  
+  .contact-info a:hover {
+    color: #00FFFF;
+  }
+  
+  .contact-icons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .contact-icons a {
+    width: 24px;
+    height: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: #F0EBD8;
+    transition: transform 0.3s ease, color 0.3s ease;
+  }
+  
+  .contact-icons a:hover {
+    transform: scale(1.2);
+    color: #00FFFF;
+  }
+  
 
 #theme-toggle {
     position: fixed;
