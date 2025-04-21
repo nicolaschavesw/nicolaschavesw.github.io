@@ -682,13 +682,12 @@ body {
     max-width: 600px;
     margin: 0 auto;
     color: #F0EBD8;
-    box-shadow: 0 0 20px rgba(0, 255, 255, 0.2);
+    box-shadow: 0 0 20px var(--hover-color-contact);
     text-align: center;
   }
   
   .contact-card h2 {
     font-size: 2rem;
-    color: #00FFFF;
     margin-bottom: 20px;
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -714,7 +713,7 @@ body {
   }
   
   .contact-info a:hover {
-    color: #00FFFF;
+    color: var(--hover-color-contact);
   }
   
   .contact-icons {
@@ -738,7 +737,7 @@ body {
   
   .contact-icons a:hover {
     transform: scale(1.2);
-    color: #00FFFF;
+    color: var(--hover-color-contact);
   }
   
 
