@@ -588,8 +588,9 @@ body {
 
 .project-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 30px;
+    width: 100%;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 100px;
     margin-top: 30px;
 }
 
@@ -599,11 +600,13 @@ body {
     padding: 20px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
     text-align: center;
-    transition: transform 0.3s ease;
+    transition: all 0.3s ease;
 }
 
 .project-card:hover {
-    transform: scale(1.05);
+    transform: scale(1.2);
+    background-color: #0D1321;
+    box-shadow: 0 0 20px var(--hover-color-projects-rgba);
 }
 
 .project-card img {
@@ -614,6 +617,23 @@ body {
     margin-bottom: 15px;
 }
 
+.project-card svg {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    padding: 5px;
+    fill: #F0EBD8;
+    transition: all 0.3s ease;
+}
+
+.project-card svg:hover {
+    transform: scale(1.1);
+    fill: var(--hover-color-projects);
+    background-color: #0D1321;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
 .project-card h3 {
     color: var(--hover-color-projects);
 }
@@ -622,20 +642,37 @@ body {
     color: #F0EBD8;
 }
 
-.project-card a {
-    display: inline-block;
-    margin-top: 10px;
-    padding: 8px 16px;
-    background-color: var(--hover-color-projects);
-    color: #0D1321;
-    border-radius: 5px;
+.project-card p a {
+    color: #F0EBD8;
     text-decoration: none;
-    font-weight: bold;
-    transition: 0.3s;
+    font-weight: 600;
+    transition: all 0.3s ease;
 }
 
-.project-card a:hover {
-    background-color: #F0EBD8;
+.project-card p a:hover {
+    color: var(--hover-color-projects);
+    transform: scale(2);
+}
+
+.project-description {
+    max-width: 300px;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+.project-links {
+    display: flex;
+    align-items: self-start;
+    justify-content: left;
+    gap: 20px;
+}
+
+.project-icon-link {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 5px;
 }
 
 /* Responsive: se vuelve una columna en pantallas chicas */
@@ -659,6 +696,46 @@ body {
     gap: 300px;
 }
 
+.static-icon {
+    position: relative;
+    display: inline-block;
+    font-size: 4rem;
+    color: #ccc;
+    overflow: hidden;
+}
+
+.static-icon i {
+    z-index: 1;
+    position: relative;
+}
+
+.static-overlay {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: repeating-linear-gradient(0deg,
+            #fff,
+            #fff 1px,
+            #000 2px);
+    opacity: 0.2;
+    animation: static-noise 0.2s infinite steps(10);
+    z-index: 2;
+    pointer-events: none;
+}
+
+@keyframes static-noise {
+    0% {
+        background-position: 0 0;
+    }
+
+    100% {
+        background-position: 0 10px;
+    }
+}
+
 .skill-card {
     max-width: 100px;
     background: rgba(255, 255, 255, 0.05);
@@ -669,7 +746,7 @@ body {
 }
 
 .skill-card:hover {
-    
+
     transform: scale(1.05);
 }
 
@@ -684,46 +761,46 @@ body {
     color: #F0EBD8;
     box-shadow: 0 0 20px var(--hover-color-contact);
     text-align: center;
-  }
-  
-  .contact-card h2 {
+}
+
+.contact-card h2 {
     font-size: 2rem;
     margin-bottom: 20px;
     text-transform: uppercase;
     letter-spacing: 2px;
-  }
-  
-  .contact-card p {
+}
+
+.contact-card p {
     font-size: 1.1rem;
     margin: 10px 0;
-  }
-  
-  .contact-info {
+}
+
+.contact-info {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 15px;
-  }
-  
-  .contact-info a {
+}
+
+.contact-info a {
     color: #F0EBD8;
     text-decoration: none;
     font-weight: 600;
     transition: color 0.3s ease;
-  }
-  
-  .contact-info a:hover {
+}
+
+.contact-info a:hover {
     color: var(--hover-color-contact);
-  }
-  
-  .contact-icons {
+}
+
+.contact-icons {
     margin-top: 20px;
     display: flex;
     justify-content: center;
     gap: 20px;
-  }
-  
-  .contact-icons a {
+}
+
+.contact-icons a {
     width: 24px;
     height: 24px;
     display: flex;
@@ -733,13 +810,13 @@ body {
     text-decoration: none;
     color: #F0EBD8;
     transition: transform 0.3s ease, color 0.3s ease;
-  }
-  
-  .contact-icons a:hover {
+}
+
+.contact-icons a:hover {
     transform: scale(1.2);
     color: var(--hover-color-contact);
-  }
-  
+}
+
 
 #theme-toggle {
     position: fixed;
