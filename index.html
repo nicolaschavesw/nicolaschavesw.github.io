@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portafolio - Gabriel Nicolás Chaves Torres</title>
+    <title data-i18n="title.page"></title>
     <link rel="stylesheet" href="Assets/styles.css">
     <script defer src="script.js"></script>
     <!-- Animacion aos -->
@@ -19,13 +19,17 @@
 
 <body>
     <div class="sidebar">
+        <div class="language-switch">
+            <button id="lang-es" class="lang-btn active">ES</button>
+            <button id="lang-en" class="lang-btn active">EN</button>
+        </div>
         <nav>
             <ul>
                 <li data-section="about">
                     <a href="#about">
                         <button>
                             <i class="fas fa-user"></i>
-                            <span>Sobre mí</span>
+                            <span data-i18n="sidebar.about"></span>
                         </button>
                     </a>
                 </li>
@@ -34,7 +38,7 @@
                     <a href="#experience">
                         <button>
                             <i class="fas fa-briefcase"></i>
-                            <span>Experiencia</span>
+                            <span data-i18n="sidebar.experience"></span>
                         </button>
                     </a>
                 </li>
@@ -43,7 +47,7 @@
                     <a href="#projects">
                         <button>
                             <i class="fas fa-project-diagram"></i>
-                            <span>Proyectos</span>
+                            <span data-i18n="sidebar.projects"></span>
                         </button>
                     </a>
                 </li>
@@ -52,7 +56,7 @@
                     <a href="#skills">
                         <button>
                             <i class="fas fa-code"></i>
-                            <span>Skills</span>
+                            <span data-i18n="sidebar.skills"></span>
                         </button>
                     </a>
                 </li>
@@ -61,7 +65,7 @@
                     <a href="#contact">
                         <button>
                             <i class="fas fa-envelope"></i>
-                            <span>Contacto</span>
+                            <span data-i18n="sidebar.contact"></span>
                         </button>
                     </a>
                 </li>
@@ -76,25 +80,15 @@
                 <div class="container">
                     <div>
                         <div class="title">
-                            <h2>Hola, soy</h2>
+                            <h2 data-i18n="title.hi"></h2>
                             <h1 class="name">Gabriel Nicolás</h1>
                             <h1 class="name">Chaves Torres</h1>
                         </div>
                         <div class="text">
-
-                            <p>
-                                Ingeniero en Multimedia
-                                y desarrollador Unity especializado
-                                en experiencias de realidad virtual
-                                (VR) y optimización de entornos
-                                3D interactivos.
+                            <p data-i18n="about.description.1"></p>
                             </p>
-                            <p>
-                                Con experiencia en C#, Unity, modelado 3D y desarrollo web, combino habilidades técnicas
-                                y creatividad para crear experiencias inmersivas e intuitivas. Me apasiona el diseño de
-                                videojuegos y la innovación tecnológica aplicada a la educación y simulación.
+                            <p data-i18n="about.description.2"></p>
                             </p>
-
                             <div class="tech-slider">
                                 <div class="tech-track">
 
@@ -291,33 +285,25 @@
             </section>
             <!-- 1 -->
             <section id="experience" class="experience" data-aos="fade-up">
-                <h2>Experiencia</h2>
+                <h2 data-i18n="title.experience"></h2>
 
                 <div class="experience-card">
                     <div class="experience-header">
-                        <h3 class="experience-title">Project Manager</h3>
-                        <span class="experience-date">Ene 2022 - Jul 2022</span>
+                        <h3 class="experience-title" data-i18n="title.experience.1"></h3>
+                        <span class="experience-date" data-i18n="title.experience.1.date"></span>
                     </div>
-                    <h4 class="experience-company">Proyecto Aplicación 3D e integración Multimedia</h4>
-                    <p class="experience-description">
-                        Desarrollo de un entorno 3D del campus de la <strong>Universidad Militar Nueva Granada</strong>
-                        enfocado principalmente en el desarrollo de maneras de movilización de un usuario
-                        dentro de un entorno 3D.
-                    </p>
-                    <p class="experience-description">
-                        En colaboración con <strong>Picolab</strong> como cliente, el proyecto se desarrollo en
-                        <strong>Unreal Engine 4</strong> y tuvo como base los planos de la infraestructura del
-                        campus de la Universidad.
-                    </p>
+                    <h4 class="experience-company" data-i18n="title.experience.1.company"></h4>
+                    <p class="experience-description" data-i18n="title.experience.1.description.1"></p>
+                    <p class="experience-description" data-i18n="title.experience.1.description.2"></p>
                     <ul class="experience-tasks">
-                        <li>Planificación general de las etapas del proyecto y entregables.</li>
-                        <li>Gestion y supervisión de las actividades de los compañeros de trabajo.</li>
-                        <li>Montaje y Diseño del entorno 3D.</li>
-                        <li>Creación de mecanicas de movilidad en el entorno 3D.</li>
-                        <li>Optimización y pruebas para la presentación del proyecto.</li>
+                        <li data-i18n="title.experience.1.task.1"></li>
+                        <li data-i18n="title.experience.1.task.2"></li>
+                        <li data-i18n="title.experience.1.task.3"></li>
+                        <li data-i18n="title.experience.1.task.4"></li>
+                        <li data-i18n="title.experience.1.task.5"></li>
                     </ul>
                     <div class="experience-tech">
-                        <span>Tecnologías:</span>
+                        <span data-i18n="title.experience.technologies"></span>
                         <div class="tech-icons-used">
                             <!-- Unreal Engine -->
                             <svg fill="currentColor" width="800px" height="800px" viewBox="0 0 24 24" role="img"
@@ -355,31 +341,20 @@
                 <!-- 2 -->
                 <div class="experience-card">
                     <div class="experience-header">
-                        <h3 class="experience-title">Asistente en el area de Tecnologia</h3>
-                        <span class="experience-date">Jun 2023 - Nov 2023</span>
+                        <h3 class="experience-title" data-i18n="title.experience.2"></h3>
+                        <span class="experience-date" data-i18n="title.experience.2.date"></span>
                     </div>
-                    <h4 class="experience-company">Brinsa S.A.</h4>
-                    <p class="experience-description">
-                        Durante mi práctica profesional, participé activamente en la creación de experiencias de
-                        <strong>realidad virtual</strong> centradas en los productos de las marcas <strong>Blancox y
-                            Refisal</strong>.
-                        Me desempeñé en un entorno colaborativo, aplicando habilidades técnicas y de
-                        planeación para el desarrollo de proyectos inmersivos.
-                    </p>
+                    <h4 class="experience-company" data-i18n="title.experience.2.company"></h4>
+                    <p class="experience-description" data-i18n="title.experience.2.description.1"></p>
                     <ul class="experience-tasks">
-                        <li>Participación en el proceso de ideación
-                            y análisis de oportunidades, con más de 40
-                            propuestas seleccionadas para ejecución
-                            futura.</li>
-                        <li>Soporte en proyectos de ciberseguridad,
-                            desarrollando interfaces web para el
-                            seguimiento interno de pruebas.</li>
-                        <li>Modelado 3D de productos para su implementación en entornos VR.</li>
-                        <li>Integración y optimización de escenas interactivas dentro de Unity.</li>
-                        <li>Asistencia en los procesos internos del area de tecnologia.</li>
+                        <li data-i18n="title.experience.2.task.1"></li>
+                        <li data-i18n="title.experience.2.task.2"></li>
+                        <li data-i18n="title.experience.2.task.3"></li>
+                        <li data-i18n="title.experience.2.task.4"></li>
+                        <li data-i18n="title.experience.2.task.5"></li>
                     </ul>
                     <div class="experience-tech">
-                        <span>Tecnologías:</span>
+                        <span data-i18n="title.experience.technologies"></span>
                         <div class="tech-icons-used">
                             <!-- Unity -->
                             <svg fill="currentColor" width="800px" height="800px" viewBox="-0.5 0 24 24" title="Unity"
@@ -410,11 +385,8 @@
                                            H255.831H111.866l6.885,55.708h137.08h7.7l-7.7,3.205l-132.07,55.006l4.38,54.453l127.69,0.414l68.438,0.217l-4.381,72.606
                                            l-64.058,18.035v-0.057l-0.525,0.146l-61.864-15.617l-3.754-45.07h-0.205H132.1h-0.202l7.511,87.007l116.423,34.429v-0.062
                                            l0.21,0.062l115.799-33.802l15.021-172.761h-131.03h-0.323l0.323-0.14l135.83-58.071L397.29,94.302z">
-
                                     </path>
-
                                 </g>
-
                             </svg>
                             <!-- HTML -->
                             <svg role="img" viewBox="0 0 24 24" fill="currentColor" class="html-icon" role="img"
@@ -429,25 +401,20 @@
                 <!-- 3 -->
                 <div class="experience-card">
                     <div class="experience-header">
-                        <h3 class="experience-title">Desarrollador Jr Unity</h3>
-                        <span class="experience-date">Jul 2024 - Nov 2024</span>
+                        <h3 class="experience-title" data-i18n="title.experience.3"></h3>
+                        <span class="experience-date" data-i18n="title.experience.3.date"></span>
                     </div>
-                    <h4 class="experience-company">Virtux S.A.</h4>
-                    <p class="experience-description">
-                        Desarrolle experiencias de realidad virtual con ayuda de Unity, Autodesk Maya y 3D Max
-                        para las capacitaciones de la seguridad en las alturas y la seguridad vial.
-                    </p>
+                    <h4 class="experience-company" data-i18n="title.experience.3.date"></h4>
+                    <p class="experience-description" data-i18n="title.experience.3.description.1"></p>
                     <ul class="experience-tasks">
-                        <li>Realización de modelos 3D para los escenarios de capacitación.</li>
-                        <li>Creación de codigo para el funcionamiento y comportamiento de la experiencia junto con
-                            mecanicas VR.</li>
-                        <li>Creación de los espacios como ciudades o autopistas para el desarrollo de las experiencias.
-                        </li>
-                        <li>Planeación de eventos y situaciones de la experiencia VR.</li>
-                        <li>Optimización de modelos y Assets 3D.</li>
+                        <li data-i18n="title.experience.3.task.1"></li>
+                        <li data-i18n="title.experience.3.task.2"></li>
+                        <li data-i18n="title.experience.3.task.3"></li>
+                        <li data-i18n="title.experience.3.task.4"></li>
+                        <li data-i18n="title.experience.3.task.5"></li>
                     </ul>
                     <div class="experience-tech">
-                        <span>Tecnologías:</span>
+                        <span data-i18n="title.experience.technologies"></span>
                         <div class="tech-icons-used">
                             <!-- Unity -->
                             <svg fill="currentColor" width="800px" height="800px" viewBox="-0.5 0 24 24" title="Unity"
@@ -470,24 +437,16 @@
             </section>
 
             <section id="projects" class="projects" data-aos="fade-up">
-                <h2>Proyectos</h2>
+                <h2 data-i18n="title.projects"></h2>
                 <div class="project-grid">
                     <!-- Proyecto Don't Sleep -->
                     <div class="project-card">
                         <img src="Assets/Images/Dont Sleep.png" alt="Proyecto 1">
-                        <h3>Don't Sleep</h3>
+                        <h3 data-i18n="title.project.1"></h3>
+                        <p data-i18n="title.project.1.description.1"></p>
+                        <p data-i18n="title.project.1.description.2"></p>
                         <p>
-                            Juego realizado para la Game Jam de <strong>1</strong> dia de Generation Colombia
-                            con la cohorte 5, fue realizado en <strong>Unity</strong>
-                        </p>
-                        <p>
-                            El tema de la Game Jam fue "Sin Violencia"
-                        </p>
-                        <p>
-                            <a href="https://itch.io/jam/generation-cohort-5-gamejam-1-day" target="_blank"
-                                rel="noopener noreferrer">
-                                Mira la Game Jam Aqui
-                            </a>
+                            <a href="https://itch.io/jam/generation-cohort-5-gamejam-1-day" target="_blank" rel="noopener noreferrer" data-i18n="title.project.1.gamejam"></a>
                         </p>
                         <div class="project-links">
 
@@ -517,18 +476,11 @@
                     <!-- Proyecto Hangover Journey -->
                     <div class="project-card">
                         <img src="Assets/Images/Hangover Journey.png" alt="Proyecto 2">
-                        <h3>Hangover Journey</h3>
+                        <h3 data-i18n="title.project.2"></h3>
+                        <p data-i18n="title.project.2.description.1"></p>
+                        <p data-i18n="title.project.2.description.2"></p>
                         <p>
-                            Juego realizado para la Game Jam de <strong>2</strong> dias de Generation Colombia
-                            con la cohorte 5, fue realizado en <strong>Unity</strong>
-                        </p>
-                        <p>
-                            El tema de la Game Jam fue "Caminos"
-                        </p>
-                        <p>
-                            <a href="https://itch.io/jam/roads-gamejam" target="_blank" rel="noopener noreferrer">
-                                Mira la Game Jam Aqui
-                            </a>
+                            <a href="https://itch.io/jam/roads-gamejam" target="_blank" rel="noopener noreferrer" data-i18n="title.project.2"></a>
                         </p>
                         <div class="project-links">
 
@@ -560,18 +512,11 @@
                     <!-- Proyecto Metamorphosis -->
                     <div class="project-card">
                         <img src="Assets/Images/metamorphosis.png" alt="Proyecto 3">
-                        <h3>Metamorphosis</h3>
+                        <h3 data-i18n="title.project.3"></h3>
+                        <p data-i18n="title.project.3.description.1"></p>
+                        <p data-i18n="title.project.3.description.2"></p>
                         <p>
-                            Juego realizado para la Game Jam de <strong>3</strong> dias de Generation Colombia
-                            con la cohorte 5, fue realizado en <strong>Unity</strong>
-                        </p>
-                        <p>
-                            El tema de la Game Jam fue "Evolución"
-                        </p>
-                        <p>
-                            <a href="https://itch.io/jam/evolution-game-jam" target="_blank" rel="noopener noreferrer">
-                                Mira la Game Jam Aqui
-                            </a>
+                            <a href="https://itch.io/jam/evolution-game-jam" target="_blank" rel="noopener noreferrer" data-i18n="title.project.3.gamejam"></a>
                         </p>
                         <div class="project-links">
 
@@ -603,14 +548,9 @@
                     <!-- Proyecto The-Dwelling-Of-The-Damned -->
                     <div class="project-card">
                         <img src="Assets/Images/tdotd.png" alt="Proyecto 4">
-                        <h3>The-Dwelling-Of-The-Damned</h3>
-                        <p>
-                            Juego realizado como proyecto final para Generation Colombia
-                            con la cohorte 5, fue realizado en <strong>Unity</strong>
-                        </p>
-                        <p>
-                            No tiene un tema especifico, duro alrededor de 2 semanas la realización de este proyecto
-                        </p>
+                        <h3 data-i18n="title.project.4"></h3>
+                        <p data-i18n="title.project.4.description.1"></p>
+                        <p data-i18n="title.project.4.description.2"></p>
                         <div class="project-links">
 
                             <a href="https://github.com/nicolaschavesw/The-Dwelling-Of-The-Damned" target="_blank"
@@ -625,8 +565,7 @@
                                     </svg>
                                 </button>
                             </a>
-                            <a href="https://natcastelvi.itch.io/tdotd" target="_blank"
-                                rel="noopener noreferrer">
+                            <a href="https://natcastelvi.itch.io/tdotd" target="_blank" rel="noopener noreferrer">
                                 <button class="project-icon-link" title="Itch.io">
                                     <svg role="img" viewBox="0 0 24 24" fill="currentColor"
                                         xmlns="http://www.w3.org/2000/svg">
@@ -641,18 +580,10 @@
                     <!-- Proyecto Campus UMNG Virtual -->
                     <div class="project-card">
                         <video width="640" height="360" controls autoplay muted loop>
-                            <source src="Assets/Images/Recorrido Virtual Campus UMNG.mp4" type="video/mp4">
-                            Tu navegador no soporta el elemento de video.
-                        </video>
-                        <h3>Campus UMNG Virtual</h3>
-                        <p>
-                            Proyecto realizado para las materias "Aplicaciones 3D" y "Integración Multimedia" de 
-                            la Universidad Militar Nueva Granada, fue realizado en <strong>Unreal Engine 4.0</strong>
-                        </p>
-                        <p>
-                            El proyecto busca aplicar diferentes formas de solucionar la movilidad de un usuario dentro de un
-                            espacio virtual gigante
-                        </p>
+                            <source src="Assets/Images/Recorrido Virtual Campus UMNG.mp4" type="video/mp4" data-i18n="title.project.5.video"></video>
+                        <h3 data-i18n="title.project.5"></h3>
+                        <p data-i18n="title.project.5.description.1"></p>
+                        <p data-i18n="title.project.5.description.2"></p>
                         <div class="project-links">
 
                             <a href="https://github.com/nicolaschavesw/Aplicaciones_3D" target="_blank"
@@ -672,13 +603,9 @@
                     <!-- Proyecto Pong Game -->
                     <div class="project-card">
                         <img src="Assets/Images/pong game.gif" alt="Proyecto 4">
-                        <h3>Pong Game</h3>
-                        <p>
-                            Es un juego realizado como proyecto personal en <strong>Unity 5.0</strong>
-                        </p>
-                        <p>
-                            El proyecto esta actualmente en desarrollo :)
-                        </p>
+                        <h3 data-i18n="title.project.6"></h3>
+                        <p data-i18n="title.project.6.description.1"></p>
+                        <p data-i18n="title.project.6.description.2"></p>
                         <div class="project-links">
 
                             <a href="https://github.com/nicolaschavesw/PongGame" target="_blank"
@@ -698,47 +625,289 @@
                 </div>
             </section>
 
-            <section id="skills" class="skills" data-aos="fade-up">
-                <h2>Habilidades</h2>
-
+            <section class="skills" data-aos="fade-up">
+                <h2 data-i18n="title.skills"></h2>
                 <div class="skills-grid">
+                    <!-- Unity Skill -->
+                    <div class="skill-card" data-skill="85%">
+                        <div class="icon">
+                            <svg fill="currentColor" width="800px" height="800px" viewBox="-0.5 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="m15.266 12.001 4.2-7.249 2.03 7.253-2.03 7.25-4.2-7.25zm-2.047 1.177 4.201 7.254-7.316-1.876-5.285-5.378zm4.2-9.608-4.2 7.253h-8.4l5.285-5.378 7.314-1.875zm6 5.963-2.566-9.533-9.564 2.555-1.416 2.489-2.873-.021-7 6.978 7 6.977 2.871-.022 1.418 2.489 9.564 2.554 2.56-9.531-1.453-2.468z" />
+                            </svg>
+                        </div>
+                        <div class="info">
+                            <div class="label">Unity</div>
+                            <div class="bar">
+                                <div class="fill"></div>
+                            </div>
+                        </div>
+                        <span class="tooltip" data-i18n="title.skill.unity"></span>
+                    </div>
+                    <!-- Unreal Engine Skill -->
+                    <div class="skill-card" data-skill="50%">
+                        <div class="icon">
+                            <svg fill="currentColor" width="800px" height="800px" viewBox="0 0 24 24" role="img"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M11.999 0C5.427 0 .1 5.373.1 12c0 6.628 5.327 12 11.899 12 6.571 0 11.899-5.372 11.899-12 0-6.627-5.328-12-11.9-12zm0 .528c3.038 0 5.895 1.194 8.043 3.36A11.446 11.446 0 0 1 23.374 12c0 3.064-1.183 5.945-3.332 8.112A11.254 11.254 0 0 1 12 23.472a11.253 11.253 0 0 1-8.044-3.36A11.447 11.447 0 0 1 .623 12c0-3.064 1.184-5.945 3.332-8.112A11.252 11.252 0 0 1 12 .528zm-.595 4.223c-1.938.52-3.732 1.516-6.123 4.258-2.392 2.742-1.938 5.006-1.938 5.006s.66-1.558 2.247-3.199c.752-.777 1.314-1.037 1.698-1.038a.598.598 0 0 1 .632.602v5.567c0 .55-.354.669-.68.663-.279-.005-.537-.102-.537-.102 1.63 2.368 5.526 2.7 5.526 2.7l1.711-1.828.04.035 1.568 1.336c2.866-1.703 4.248-4.86 4.248-4.86-1.279 1.353-2.094 1.669-2.578 1.667-.429-.003-.597-.255-.597-.255-.023-.117-.063-1.81-.078-3.505-.014-1.756-.001-3.513.087-3.518.494-.929 2.073-2.802 2.073-2.802-2.948.581-4.556 2.513-4.556 2.513-.475-.374-1.444-.311-1.444-.311.454.25.907.976.907 1.578v5.92s-.99.873-1.752.873c-.451 0-.729-.247-.881-.449a1.182 1.182 0 0 1-.15-.258V8.033a.634.634 0 0 1-.363.123c-.162 0-.33-.082-.444-.32-.086-.18-.141-.45-.141-.842 0-1.35 1.525-2.243 1.525-2.243z" />
+                            </svg>
+                        </div>
+                        <div class="info">
+                            <div class="label">Unreal Engine</div>
+                            <div class="bar">
+                                <div class="fill"></div>
+                            </div>
+                        </div>
+                        <span class="tooltip" data-i18n="title.skill.unrealengine"></span>
+                    </div>
+                    <!-- Autodesk Maya Skill -->
+                    <div class="skill-card" data-skill="70%">
+                        <div class="icon">
+                            <svg role="img" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M4.348 0 .69 2.203v16.875l3.657-2.203h17.297V1.219c0-.67-.551-1.219-1.22-1.219H4.349zm18.297 3.75v14.125H4.627l-1.943 1.17v3.736c0 .67.55 1.219 1.218 1.219H23.31V3.75h-.664zm-14.471.025h2.937l1.885 7.508 1.977-7.48-.012-.028h2.857v9.354h-2.216v-6.04l-1.565 6.026v.014h-2.203l-1.656-6.28v6.28H8.174V3.775zm1.33 14.762h1.18l1.068 3.543h-.902l-.217-.773H9.568l-.197.773h-.88l1.013-3.543zm1.918 0h.932l.648 1.494.643-1.494h.894l-1.113 2.133v1.41h-.887v-1.406l-1.117-2.137zm3.826 0h1.18l1.068 3.543h-.9l-.217-.773h-1.065l-.197.773h-.88l1.011-3.543zm-5.156.582-.362 1.53h.73l-.368-1.53zm5.744 0-.36 1.53h.73l-.37-1.53z" />
+                            </svg>
+                        </div>
+                        <div class="info">
+                            <div class="label">Autodesk Maya</div>
+                            <div class="bar">
+                                <div class="fill"></div>
+                            </div>
+                        </div>
+                        <span class="tooltip" data-i18n="title.skill.maya"></span>
+                    </div>
+                    <!-- GitHub Skill -->
+                    <div class="skill-card" data-skill="60%">
+                        <div class="icon">
+                            <svg fill="currentColor" width="800px" height="800px" viewBox="0 0 32 32" version="1.1"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M16 1.375c-8.282 0-14.996 6.714-14.996 14.996 0 6.585 4.245 12.18 10.148 14.195l0.106 0.031c0.75 0.141 1.025-0.322 1.025-0.721 0-0.356-0.012-1.3-0.019-2.549-4.171 0.905-5.051-2.012-5.051-2.012-0.288-0.925-0.878-1.685-1.653-2.184l-0.016-0.009c-1.358-0.93 0.105-0.911 0.105-0.911 0.987 0.139 1.814 0.718 2.289 1.53l0.008 0.015c0.554 0.995 1.6 1.657 2.801 1.657 0.576 0 1.116-0.152 1.582-0.419l-0.016 0.008c0.072-0.791 0.421-1.489 0.949-2.005l0.001-0.001c-3.33-0.375-6.831-1.665-6.831-7.41-0-0.027-0.001-0.058-0.001-0.089 0-1.521 0.587-2.905 1.547-3.938l-0.003 0.004c-0.203-0.542-0.321-1.168-0.321-1.821 0-0.777 0.166-1.516 0.465-2.182l-0.014 0.034s1.256-0.402 4.124 1.537c1.124-0.321 2.415-0.506 3.749-0.506s2.625 0.185 3.849 0.53l-0.1-0.024c2.849-1.939 4.105-1.537 4.105-1.537 0.285 0.642 0.451 1.39 0.451 2.177 0 0.642-0.11 1.258-0.313 1.83l0.012-0.038c0.953 1.032 1.538 2.416 1.538 3.937 0 0.031-0 0.061-0.001 0.091l0-0.005c0 5.761-3.505 7.029-6.842 7.398 0.632 0.647 1.022 1.532 1.022 2.509 0 0.093-0.004 0.186-0.011 0.278l0.001-0.012c0 2.007-0.019 3.619-0.019 4.106 0 0.394 0.262 0.862 1.031 0.712 6.028-2.029 10.292-7.629 10.292-14.226 0-8.272-6.706-14.977-14.977-14.977-0.006 0-0.013 0-0.019 0h0.001z">
+                                </path>
+                            </svg>
+                        </div>
+                        <div class="info">
+                            <div class="label">GitHub</div>
+                            <div class="bar">
+                                <div class="fill"></div>
+                            </div>
+                        </div>
+                        <span class="tooltip" data-i18n="title.skill.github"></span>
+                    </div>
+                    <!-- Git Skill -->
+                    <div class="skill-card" data-skill="40%">
+                        <div class="icon">
+                            <svg width="800px" height="800px" viewBox="0 0 24 24" fill="currentColor"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M13.4142 3.82843C12.6332 3.04738 11.3668 3.04738 10.5858 3.82843L9.91421 4.5L11.482 6.06774C11.6472 6.02356 11.8208 6 12 6C13.1046 6 14 6.89543 14 8C14 8.17916 13.9764 8.35282 13.9323 8.51804L15.982 10.5677C16.1472 10.5236 16.3208 10.5 16.5 10.5C17.6046 10.5 18.5 11.3954 18.5 12.5C18.5 13.6046 17.6046 14.5 16.5 14.5C15.3954 14.5 14.5 13.6046 14.5 12.5C14.5 12.3208 14.5236 12.1472 14.5677 11.982L13 10.4142V15.2676C13.5978 15.6134 14 16.2597 14 17C14 18.1046 13.1046 19 12 19C10.8954 19 10 18.1046 10 17C10 16.2597 10.4022 15.6134 11 15.2676V9.73244C10.4022 9.38663 10 8.74028 10 8C10 7.82084 10.0236 7.64718 10.0677 7.48196L8.5 5.91421L3.82843 10.5858C3.04738 11.3668 3.04738 12.6332 3.82843 13.4142L10.5858 20.1716C11.3668 20.9526 12.6332 20.9526 13.4142 20.1716L20.1716 13.4142C20.9526 12.6332 20.9526 11.3668 20.1716 10.5858L13.4142 3.82843ZM9.17157 2.41421C10.7337 0.852115 13.2663 0.852119 14.8284 2.41422L21.5858 9.17157C23.1479 10.7337 23.1479 13.2663 21.5858 14.8284L14.8284 21.5858C13.2663 23.1479 10.7337 23.1479 9.17157 21.5858L2.41421 14.8284C0.852115 13.2663 0.852119 10.7337 2.41422 9.17157L9.17157 2.41421Z" />
+                            </svg>
+                        </div>
+                        <div class="info">
+                            <div class="label">Git</div>
+                            <div class="bar">
+                                <div class="fill"></div>
+                            </div>
+                        </div>
+                        <span class="tooltip" data-i18n="title.skill.git"></span>
+                    </div>
+                    <!-- Figma Skill -->
+                    <div class="skill-card" data-skill="35%">
+                        <div class="icon">
+                            <svg role="img" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M15.852 8.981h-4.588V0h4.588c2.476 0 4.49 2.014 4.49 4.49s-2.014 4.491-4.49 4.491zM12.735 7.51h3.117c1.665 0 3.019-1.355 3.019-3.019s-1.355-3.019-3.019-3.019h-3.117V7.51zm0 1.471H8.148c-2.476 0-4.49-2.014-4.49-4.49S5.672 0 8.148 0h4.588v8.981zm-4.587-7.51c-1.665 0-3.019 1.355-3.019 3.019s1.354 3.02 3.019 3.02h3.117V1.471H8.148zm4.587 15.019H8.148c-2.476 0-4.49-2.014-4.49-4.49s2.014-4.49 4.49-4.49h4.588v8.98zM8.148 8.981c-1.665 0-3.019 1.355-3.019 3.019s1.355 3.019 3.019 3.019h3.117V8.981H8.148zM8.172 24c-2.489 0-4.515-2.014-4.515-4.49s2.014-4.49 4.49-4.49h4.588v4.441c0 2.503-2.047 4.539-4.563 4.539zm-.024-7.51a3.023 3.023 0 0 0-3.019 3.019c0 1.665 1.365 3.019 3.044 3.019 1.705 0 3.093-1.376 3.093-3.068v-2.97H8.148zm7.704 0h-.098c-2.476 0-4.49-2.014-4.49-4.49s2.014-4.49 4.49-4.49h.098c2.476 0 4.49 2.014 4.49 4.49s-2.014 4.49-4.49 4.49zm-.097-7.509c-1.665 0-3.019 1.355-3.019 3.019s1.355 3.019 3.019 3.019h.098c1.665 0 3.019-1.355 3.019-3.019s-1.355-3.019-3.019-3.019h-.098z" />
+                            </svg>
+                        </div>
+                        <div class="info">
+                            <div class="label">Figma</div>
+                            <div class="bar">
+                                <div class="fill"></div>
+                            </div>
+                        </div>
+                        <span class="tooltip" data-i18n="title.skill.figma"></span>
+                    </div>
+                    <!-- HTML Skill -->
+                    <div class="skill-card" data-skill="70%">
+                        <div class="icon">
+                            <svg role="img" viewBox="0 0 24 24" fill="currentColor" class="html-icon" role="img"
+                                viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M1.5 0h21l-1.91 21.563L11.977 24l-8.564-2.438L1.5 0zm7.031 9.75l-.232-2.718 10.059.003.23-2.622L5.412 4.41l.698 8.01h9.126l-.326 3.426-2.91.804-2.955-.81-.188-2.11H6.248l.33 4.171L12 19.351l5.379-1.443.744-8.157H8.531z" />
+                            </svg>
+                        </div>
+                        <div class="info">
+                            <div class="label">HTML</div>
+                            <div class="bar">
+                                <div class="fill"></div>
+                            </div>
+                        </div>
+                        <span class="tooltip" data-i18n="title.skill.html"></span>
+                    </div>
+                    <!-- CSS Skill -->
+                    <div class="skill-card" data-skill="80%">
+                        <div class="icon">
+                            <svg fill="currentColor" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" width="800px" height="800px"
+                                viewBox="0 0 512 512" enable-background="new 0 0 512 512" xml:space="preserve">
+                                <g id="c133de6af664cd4f011a55de6b001b19">
 
-                    <div class="static-icon">
-                        <i class="fas fa-tv"></i> <!-- O cualquier ícono de Font Awesome -->
-                        <div class="static-overlay"></div>
+                                    <path display="inline"
+                                        d="M483.111,0.501l-42.59,461.314l-184.524,49.684L71.47,461.815L28.889,0.501H483.111z M397.29,94.302
+                                           H255.831H111.866l6.885,55.708h137.08h7.7l-7.7,3.205l-132.07,55.006l4.38,54.453l127.69,0.414l68.438,0.217l-4.381,72.606
+                                           l-64.058,18.035v-0.057l-0.525,0.146l-61.864-15.617l-3.754-45.07h-0.205H132.1h-0.202l7.511,87.007l116.423,34.429v-0.062
+                                           l0.21,0.062l115.799-33.802l15.021-172.761h-131.03h-0.323l0.323-0.14l135.83-58.071L397.29,94.302z">
+                                    </path>
+                                </g>
+                            </svg>
+                        </div>
+                        <div class="info">
+                            <div class="label">CSS</div>
+                            <div class="bar">
+                                <div class="fill"></div>
+                            </div>
+                        </div>
+                        <span class="tooltip" data-i18n="title.skill.css"></span>
+                    </div>
+                    <!-- JS Skill -->
+                    <div class="skill-card" data-skill="65%">
+                        <div class="icon">
+                            <svg fill="currentColor" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" width="800px" height="800px"
+                                viewBox="0 0 512 512" enable-background="new 0 0 512 512" xml:space="preserve">
+                                <g id="5151e0c8492e5103c096af88a51e75c7">
+
+                                    <path display="inline" fill-rule="evenodd" clip-rule="evenodd" d="M1.008,0.5C0.438,0.583,0.48,1.27,0.521,1.958
+                                           c0,169.668,0,339.31,0,508.974c169.364,1.135,340.808,0.162,510.979,0.486c0-170.309,0-340.61,0-510.918
+                                           C341.342,0.5,171.167,0.5,1.008,0.5z M259.893,452.167c-11.822,11.919-30.478,18.938-53.429,18.938
+                                           c-37.643,0-58.543-18.34-71.884-43.711c12.842-8.2,25.966-16.122,39.344-23.795c5.456,15.262,23.886,32.42,44.683,21.857
+                                           c13.183-6.699,11.661-27.01,11.661-49.054c0-45.773,0-98.578,0-139.872c-0.042-0.688-0.083-1.375,0.482-1.458
+                                           c15.707,0,31.413,0,47.116,0c0,36.788,0,78.402,0,117.529C277.866,395.199,280.91,430.988,259.893,452.167z M470.696,409.917
+                                           c-2.674,39.884-35.243,61.063-79.17,61.188c-43.062,0.124-70.624-19.013-87.433-48.567c12.085-8.317,25.778-15.017,38.375-22.822
+                                           c10.08,15.761,27.537,30.91,53.429,28.652c16.131-1.406,34.856-14.555,24.285-34.482c-5.127-9.66-17.516-14.567-28.656-19.425
+                                           c-35.352-15.424-76.828-29.571-72.861-84.992c1.327-18.514,9.852-31.525,20.889-40.796c11.311-9.5,26.46-15.867,46.629-16.511
+                                           c36.629-1.173,56.723,15.12,70.429,37.884c-11.664,8.891-24.514,16.608-37.401,24.281c-4.229-12.995-24.644-25.658-41.772-17.969
+                                           c-7.789,3.493-14.788,13.761-10.684,26.224c3.66,11.115,18.589,17.199,30.599,22.344
+                                           C433.706,340.486,474.331,355.693,470.696,409.917z">
+                                    </path>
+                                </g>
+                            </svg>
+                        </div>
+                        <div class="info">
+                            <div class="label">JavaScript</div>
+                            <div class="bar">
+                                <div class="fill"></div>
+                            </div>
+                        </div>
+                        <span class="tooltip" data-i18n="title.skill.js"></span>
+                    </div>
+                    <!-- Adobe Photoshop Skill -->
+                    <div class="skill-card" data-skill="55%">
+                        <div class="icon">
+                            <svg width="800px" height="800px" viewBox="0 0 24 24" fill="currentColor"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M19,5V19H5V5H19m0-2H5A2,2,0,0,0,3,5V19a2,2,0,0,0,2,2H19a2,2,0,0,0,2-2V5a2,2,0,0,0-2-2Z" />
+                                <rect width="24" height="24" fill="none" />
+                                <g>
+                                    <path
+                                        d="M12.11,10.47a2.41,2.41,0,0,1-.8,1.94,3.36,3.36,0,0,1-2.25.67H8.35v2.79H6.68V8H9.19a3.32,3.32,0,0,1,2.17.62A2.22,2.22,0,0,1,12.11,10.47ZM8.35,11.72h.54A1.82,1.82,0,0,0,10,11.41a1,1,0,0,0,.38-.88,1.08,1.08,0,0,0-.32-.87,1.51,1.51,0,0,0-1-.28H8.35Z" />
+                                    <path
+                                        d="M17.32,14.09a1.68,1.68,0,0,1-.64,1.41,3.2,3.2,0,0,1-1.92.48,6,6,0,0,1-1.12-.09,4,4,0,0,1-.87-.26V14.28a6.52,6.52,0,0,0,1,.36,4.58,4.58,0,0,0,1,.14c.59,0,.89-.17.89-.51a.44.44,0,0,0-.12-.32,1.5,1.5,0,0,0-.4-.27l-.78-.36a4.61,4.61,0,0,1-1-.54,1.55,1.55,0,0,1-.47-.56,1.89,1.89,0,0,1-.15-.79,1.44,1.44,0,0,1,.62-1.24,3.05,3.05,0,0,1,1.76-.44,4.89,4.89,0,0,1,2.11.48l-.49,1.18a8.28,8.28,0,0,0-.84-.32,2.72,2.72,0,0,0-.8-.12c-.49,0-.73.13-.73.39a.46.46,0,0,0,.24.38,5.56,5.56,0,0,0,1,.48,5,5,0,0,1,1,.53,1.59,1.59,0,0,1,.48.57A1.68,1.68,0,0,1,17.32,14.09Z" />
+                                </g>
+                            </svg>
+                        </div>
+                        <div class="info">
+                            <div class="label">Photoshop</div>
+                            <div class="bar">
+                                <div class="fill"></div>
+                            </div>
+                        </div>
+                        <span class="tooltip" data-i18n="title.skill.ps"></span>
+                    </div>
+                    <!-- Adobe Illustrator Skill -->
+                    <div class="skill-card" data-skill="50%">
+                        <div class="icon">
+                            <svg width="800px" height="800px" viewBox="0 0 24 24" fill="currentColor"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M19,5V19H5V5H19m0-2H5A2,2,0,0,0,3,5V19a2,2,0,0,0,2,2H19a2,2,0,0,0,2-2V5a2,2,0,0,0-2-2Z" />
+                                <g>
+                                    <path
+                                        d="M12.3,16.18l-.57-1.87H8.86l-.57,1.87H6.5L9.27,8.29h2l2.78,7.89Zm-1-3.27c-.53-1.69-.82-2.65-.89-2.87s-.11-.4-.14-.53c-.12.46-.46,1.6-1,3.4Z" />
+                                    <path
+                                        d="M14.88,8.62c0-.53.3-.8.89-.8s.89.27.89.8a.76.76,0,0,1-.22.59.9.9,0,0,1-.67.22C15.18,9.43,14.88,9.16,14.88,8.62Zm1.71,7.56H15v-6h1.64Z" />
+                                </g>
+                                <rect width="24" height="24" fill="none" />
+                            </svg>
+                        </div>
+                        <div class="info">
+                            <div class="label">Illustrator</div>
+                            <div class="bar">
+                                <div class="fill"></div>
+                            </div>
+                        </div>
+                        <span class="tooltip" data-i18n="title.skill.illustrator"></span>
+                    </div>
+                    <!-- Adobe Premiere Skill -->
+                    <div class="skill-card" data-skill="75%">
+                        <div class="icon">
+                            <svg width="800px" height="800px" viewBox="0 0 24 24" fill="currentColor"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M19,5V19H5V5H19m0-2H5A2,2,0,0,0,3,5V19a2,2,0,0,0,2,2H19a2,2,0,0,0,2-2V5a2,2,0,0,0-2-2Z" />
+                                <rect width="24" height="24" fill="none" />
+                                <g>
+                                    <path
+                                        d="M12.47,10.52a2.42,2.42,0,0,1-.79,1.94,3.39,3.39,0,0,1-2.26.67H8.71v2.8H7V8.07H9.55a3.32,3.32,0,0,1,2.17.62A2.23,2.23,0,0,1,12.47,10.52ZM8.71,11.77h.55a1.86,1.86,0,0,0,1.15-.3,1.09,1.09,0,0,0,.38-.89,1.08,1.08,0,0,0-.32-.86,1.49,1.49,0,0,0-1-.28H8.71Z" />
+                                    <path
+                                        d="M16.4,9.81a2.23,2.23,0,0,1,.56,0l-.13,1.53a2.14,2.14,0,0,0-.48-.05,1.73,1.73,0,0,0-1.22.4,1.48,1.48,0,0,0-.44,1.13v3.06H13.05v-6h1.24l.24,1h.08a2.19,2.19,0,0,1,.76-.81A1.83,1.83,0,0,1,16.4,9.81Z" />
+                                </g>
+                            </svg>
+                        </div>
+                        <div class="info">
+                            <div class="label">Premiere</div>
+                            <div class="bar">
+                                <div class="fill"></div>
+                            </div>
+                        </div>
+                        <span class="tooltip" data-i18n="title.skill.pr"></span>
+                    </div>
+                    <!-- Adobve After Effects Skill -->
+                    <div class="skill-card" data-skill="70%">
+                        <div class="icon">
+                            <svg width="800px" height="800px" viewBox="0 0 24 24" fill="currentColor"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M19,5V19H5V5H19m0-2H5A2,2,0,0,0,3,5V19a2,2,0,0,0,2,2H19a2,2,0,0,0,2-2V5a2,2,0,0,0-2-2Z" />
+                                <rect width="24" height="24" fill="none" />
+                                <g>
+                                    <path
+                                        d="M11.43,15.89,10.86,14H8l-.57,1.87H5.63L8.4,8h2l2.78,7.89Zm-1-3.27c-.53-1.69-.82-2.65-.89-2.87s-.11-.4-.14-.53c-.12.46-.46,1.59-1,3.4Z" />
+                                    <path
+                                        d="M15.92,16a3.13,3.13,0,0,1-2.27-.8,3.06,3.06,0,0,1-.81-2.27,3.33,3.33,0,0,1,.75-2.33,2.69,2.69,0,0,1,2.09-.83,2.61,2.61,0,0,1,2,.73,2.74,2.74,0,0,1,.71,2v.79H14.5a1.52,1.52,0,0,0,.41,1.09,1.43,1.43,0,0,0,1.08.4,4.22,4.22,0,0,0,1-.12,4.56,4.56,0,0,0,1-.36v1.27a4,4,0,0,1-.92.32A5.67,5.67,0,0,1,15.92,16Zm-.23-5.06a1,1,0,0,0-.82.33,1.51,1.51,0,0,0-.34.93h2.3a1.34,1.34,0,0,0-.32-.93A1.06,1.06,0,0,0,15.69,10.94Z" />
+                                </g>
+                            </svg>
+                        </div>
+                        <div class="info">
+                            <div class="label">After Effects</div>
+                            <div class="bar">
+                                <div class="fill"></div>
+                            </div>
+                        </div>
+                        <span class="tooltip" data-i18n="title.skill.aftereffects"></span>
                     </div>
 
-                    <div class="skill-card">
-                        <h3>Unity</h3>
-                    </div>
-                    <div class="skill-card">
-                        <h3>Unreal Engine</h3>
-                    </div>
-                    <div class="skill-card">
-                        <h3>Autodesk Maya</h3>
-                    </div>
-                    <div class="skill-card">
-                        <h3>Figma</h3>
-                    </div>
-                    <div class="skill-card">
-                        <h3>HTML</h3>
-                    </div>
-                    <div class="skill-card">
-                        <h3>CSS</h3>
-                    </div>
-                    <div class="skill-card">
-                        <h3>JS</h3>
-                    </div>
-                    <!-- más habilidades -->
                 </div>
-
             </section>
 
             <section id="contact" class="contact" data-aos="fade-up">
                 <div class="contact-card">
-                    <h2>Contacto</h2>
+                    <h2 data-i18n="title.contact"></h2>
                     <div class="contact-info">
-                        <p>¿Quieres trabajar conmigo o tienes una idea?</p>
+                        <p data-i18n="title.contact.question"></p>
                         <a href="mailto:nicolaschaves97@gmail.com">nicolaschaves97@gmail.com</a>
                         <a href="tel:+573222408495">+57 322 240 8495</a>
                     </div>
@@ -771,6 +940,11 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <script>
         AOS.init();
+        i18next.init({
+            interpolation: {
+                escapeValue: false
+            }
+        });
     </script>
 </body>
 
