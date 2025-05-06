@@ -367,4 +367,6 @@ document.addEventListener("DOMContentLoaded", () => {
         const browserLang = navigator.language.slice(0, 2);
         changeLanguage(savedLang || (browserLang === "es" ? "es" : "en"));
     };
+
+    document.getElementById('year').textContent = new Date().getFullYear();
 });

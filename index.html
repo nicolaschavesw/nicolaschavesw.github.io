@@ -18,11 +18,11 @@
 </head>
 
 <body>
+    <div class="language-switch">
+        <button id="lang-es" class="lang-btn active">ES</button>
+        <button id="lang-en" class="lang-btn active">EN</button>
+    </div>
     <div class="sidebar">
-        <div class="language-switch">
-            <button id="lang-es" class="lang-btn active">ES</button>
-            <button id="lang-en" class="lang-btn active">EN</button>
-        </div>
         <nav>
             <ul>
                 <li data-section="about">
@@ -78,7 +78,7 @@
 
             <section id="about" class="about" data-aos="fade-up">
                 <div class="container">
-                    <div>
+                    <div class="about-text">
                         <div class="title">
                             <h2 data-i18n="title.hi"></h2>
                             <h1 class="name">Gabriel Nicolás</h1>
@@ -446,7 +446,8 @@
                         <p data-i18n="title.project.1.description.1"></p>
                         <p data-i18n="title.project.1.description.2"></p>
                         <p>
-                            <a href="https://itch.io/jam/generation-cohort-5-gamejam-1-day" target="_blank" rel="noopener noreferrer" data-i18n="title.project.1.gamejam"></a>
+                            <a href="https://itch.io/jam/generation-cohort-5-gamejam-1-day" target="_blank"
+                                rel="noopener noreferrer" data-i18n="title.project.1.gamejam"></a>
                         </p>
                         <div class="project-links">
 
@@ -480,7 +481,8 @@
                         <p data-i18n="title.project.2.description.1"></p>
                         <p data-i18n="title.project.2.description.2"></p>
                         <p>
-                            <a href="https://itch.io/jam/roads-gamejam" target="_blank" rel="noopener noreferrer" data-i18n="title.project.2"></a>
+                            <a href="https://itch.io/jam/roads-gamejam" target="_blank" rel="noopener noreferrer"
+                                data-i18n="title.project.2"></a>
                         </p>
                         <div class="project-links">
 
@@ -516,7 +518,8 @@
                         <p data-i18n="title.project.3.description.1"></p>
                         <p data-i18n="title.project.3.description.2"></p>
                         <p>
-                            <a href="https://itch.io/jam/evolution-game-jam" target="_blank" rel="noopener noreferrer" data-i18n="title.project.3.gamejam"></a>
+                            <a href="https://itch.io/jam/evolution-game-jam" target="_blank" rel="noopener noreferrer"
+                                data-i18n="title.project.3.gamejam"></a>
                         </p>
                         <div class="project-links">
 
@@ -580,7 +583,9 @@
                     <!-- Proyecto Campus UMNG Virtual -->
                     <div class="project-card">
                         <video width="640" height="360" controls autoplay muted loop>
-                            <source src="Assets/Images/Recorrido Virtual Campus UMNG.mp4" type="video/mp4" data-i18n="title.project.5.video"></video>
+                            <source src="Assets/Images/Recorrido Virtual Campus UMNG.mp4" type="video/mp4"
+                                data-i18n="title.project.5.video">
+                        </video>
                         <h3 data-i18n="title.project.5"></h3>
                         <p data-i18n="title.project.5.description.1"></p>
                         <p data-i18n="title.project.5.description.2"></p>
@@ -930,21 +935,18 @@
                 </div>
             </section>
         </div>
-        <footer>
-            <div class="footer-content">
-                <p>&copy; 2025 Gabriel Nicolás Chaves</p>
-                <div class="social-icons">
-        </footer>
     </main>
+    <footer>
+        <div class="footer-content">
+            <p>&copy; <span id="year"></span> Gabriel Nicolás Chaves Torres. Todos los derechos reservados.</p>
+            <div class="social-icons">
+            </div>
+        </div>
+    </footer>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <script>
         AOS.init();
-        i18next.init({
-            interpolation: {
-                escapeValue: false
-            }
-        });
     </script>
 </body>
 
