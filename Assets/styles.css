@@ -949,9 +949,9 @@ main section h2 {
     }
 }
 
-@media (max-width: 920px) {
-    .language-switch {
-        padding: 30px 200px;
+@media (max-width: 1024px) {
+    .skill-card .tooltip {
+        display: none;
     }
 
 }
@@ -964,7 +964,7 @@ main section h2 {
     }
 
     .language-switch {
-        padding: 30px 240px;
+        padding: 30px 60px;
     }
 
     .lang-btn {
@@ -1035,17 +1035,7 @@ main section h2 {
 
 }
 
-@media (max-width: 730px) {
-    .language-switch {
-        padding: 30px 300px;
-    }
-
-}
-
 @media (max-width: 660px) {
-    .language-switch {
-        padding: 30px 370px;
-    }
 
     .skills-grid {
         grid-template-columns: repeat(2, minmax(100px, 1fr));
@@ -1063,9 +1053,6 @@ main section h2 {
 }
 
 @media (max-width: 570px) {
-    .language-switch {
-        padding: 30px 410px;
-    }
 
     .skill-card .icon {
         width: 30px;
@@ -1076,9 +1063,6 @@ main section h2 {
 }
 
 @media (max-width: 520px) {
-    .language-switch {
-        padding: 30px 460px;
-    }
 
     .skill-card .icon {
         width: 20px;
@@ -1091,13 +1075,6 @@ main section h2 {
     }
 }
 
-@media (max-width: 450px) {
-    .language-switch {
-        padding: 30px 500px;
-    }
-
-}
-
 @media (max-width: 425px) {
 
     main {
@@ -1106,12 +1083,12 @@ main section h2 {
         margin: 0 auto;
     }
 
-    main section h2{
+    main section h2 {
         font-size: 1.3rem;
     }
 
     .language-switch {
-        padding: 30px 420px;
+        padding: 30px 20px;
     }
 
     .lang-btn {
@@ -1174,10 +1151,6 @@ main section h2 {
         margin: 0 auto;
     }
 
-    .language-switch {
-        padding: 30px 460px;
-    }
-
     .contact-card {
         padding: 30px;
     }
@@ -1196,16 +1169,9 @@ main section h2 {
         width: 100%;
     }
 
-    .language-switch {
-        padding: 30px 20px;
-    }
-
     .lang-btn {
         width: 30px;
         font-size: 0.6rem;
     }
 
-    .skills {
-        display: none;
-    }
 }
