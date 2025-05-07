@@ -1084,7 +1084,7 @@ main section h2 {
     }
 
     main section h2 {
-        font-size: 1.3rem;
+        font-size: 1.1rem;
     }
 
     .language-switch {
@@ -1101,18 +1101,75 @@ main section h2 {
     }
 
     .about .title h1 {
-        font-size: 3.0rem;
+        font-size: 2.2rem;
     }
 
     .about .title h2 {
-        font-size: 2.0rem;
+        font-size: 1.7rem;
     }
 
     .about .text p {
+        font-size: 0.9rem;
         margin-left: 0;
         margin-right: 0;
         margin-top: 4px;
         margin-bottom: 4px;
+    }
+
+    .experience-title {
+        font-size: 1.2rem;
+    }
+
+    .experience-date {
+        font-size: 0.6rem;
+    }
+
+    .experience-company {
+        font-size: 0.8rem;
+    }
+
+    .experience-description {
+        font-size: 0.6rem;
+    }
+
+    .experience-tasks li {
+        font-size: 0.55rem;
+    }
+
+    .experience-tech {
+        font-size: 0.6rem;
+    }
+
+    .tech-icons-used {
+        margin-top: 10px;
+    }
+
+    .tech-icons-used svg {
+        width: 30px;
+        height: 30px;
+        padding: 2px;
+        margin: 5px;
+    }
+
+    .project-card img {
+        height: 120px;
+    }
+
+    .project-card h3 {
+        font-size: 1.0rem;
+    }
+
+    .project-card p {
+        font-size: 0.7rem;
+    }
+
+    .project-icon-link {
+        padding: 2px;
+    }
+
+    .project-card svg {
+        width: 30px;
+        height: 30px;
     }
 
     .project-grid {
@@ -1136,6 +1193,18 @@ main section h2 {
 
     .skill-card .label {
         font-size: 0.7rem;
+    }
+
+    .contact-card {
+        padding: 20px;
+    }
+
+    .contact-card p {
+        font-size: 0.8rem;
+    }
+
+    .contact-info a {
+        font-size: 0.8rem;
     }
 
     .footer-content {

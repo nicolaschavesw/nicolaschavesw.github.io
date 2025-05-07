@@ -238,7 +238,8 @@ document.addEventListener("DOMContentLoaded", () => {
             "title.skill.aftereffects": "After Effects: Animación y efectos visuales",
 
             "title.contact": "Contacto",
-            "title.contact.question": "¿Quieres trabajar conmigo o tienes una idea?"
+            "title.contact.question": "¿Quieres trabajar conmigo o tienes una idea?",
+            "title.footer.rights": "Gabriel Nicolás Chaves Torres. Todos los derechos reservados."
         },
         en: {
             "title.page": "Portfolio - Gabriel Nicolás Chaves Torres",
@@ -334,7 +335,8 @@ document.addEventListener("DOMContentLoaded", () => {
             "title.skill.aftereffects": "After Effects: Animation and visual effects",
 
             "title.contact": "Contact",
-            "title.contact.question": "Do you want to work with me or have an idea?"
+            "title.contact.question": "Do you want to work with me or have an idea?",
+            "title.footer.rights": "Gabriel Nicolás Chaves Torres. All rights reserved."
         }
     };
 
